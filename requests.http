@@ -1,0 +1,5 @@
+### 카카오뱅크 키워드로 장소검색하기
+GET http://localhost:8080/place?keyword=카카오뱅크
+
+### 키워드 별 검색 횟수 상위 10개 조회
+GET http://localhost:8080/searchCountByKeywordTop10Rank
