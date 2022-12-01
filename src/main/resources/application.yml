@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: place-search
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    database-platform: H2
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  redis:
+    host: localhost
+    port: 6379
+
+kakao:
+  api:
+    url: https://dapi.kakao.com/v2
+    key: KakaoAK 3c608e32fb7242d6943bba93744e1875
+
+naver:
+  api:
+    url: https://openapi.naver.com/v1
+    client-id: 14qzeszRi8nDVaFs8R0p
+    client-secret: zjcMmlTfqK
